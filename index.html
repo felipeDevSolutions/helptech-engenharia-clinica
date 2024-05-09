@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>HelpTech Engenharia Clínica</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+	  
+        <div class="container">
+	  
+            <!--────────────────Header───────────────-->
+            <header>
+                <a class="logo" href="#home">
+                    <img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" alt="repl logo" />
+                </a>
+                <nav>	
+                <ul class="nav-bar"><div class="bg"></div>
+                    <li><a class="nav-link active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#projects">Vídeos</a></li>
+                    <li><a class="nav-link" href="#fluxogramas">Fluxogramas</a></li>
+                    <li><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+                    
+                    
+                </nav>
+            </header>
+            <main>
+                <!--─────────────────Home────────────────-->
+                <div id="home">
+                    <div class="filter"></div>
+                    <section class="intro">
+                        <h3>HelpTech Engenharia Clínica<hr></h3>
+                        <p>Aqui, você encontrará uma coleção de vídeos e fluxogramas, feitos especialmente para você, colaborador da Engenharia Clínica.</p>
+                        <p>Estes tutoriais estão aqui para ajudá-lo à aprender novos procedimentos e até relembrar os processos existentes.</p>
+                        <p>Sinta-se à vontade para explorar o conhecimento que está ao seu alcance!</p>
+                        
+                    <!--────social media links─────-->
+                        
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+                        <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+                        <a href="#" target="_blank"><i class='fab fa-github'></i></a>
+                        <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        
+                    </section> 
+                </div>  
+                
+                <!--───────────────Projects───────────────-->
+                <div class="projects" id="projects"> 
+                    <h3>Nossos Vídeos</h3>
+                    <p>Aqui estão alguns vídeos dos nossos processos:</p>
+                    <div class="work-box">
+                        <div class="work">
+                            <!-- Card do vídeo 1 -->
+                            <div class="card" onclick="playVideo('UT0zW96BQtE')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UT0zW96BQtE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                                <div class="work-content">Como abrir requisição</div>
+                            </div>
+                            <!-- Card do vídeo 2 -->
+                            <div class="card" onclick="playVideo('AE6dzHmdtxY')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AE6dzHmdtxY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Verificar requisição em outras bases</div>
+                            </div>
+                            <!-- Card do vídeo 3 -->
+                            <div class="card" onclick="playVideo('lT4KLDwqN8Y')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lT4KLDwqN8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Importância dos transportes</div>
+                            </div>
+                            <!-- Card do vídeo 4 -->
+                            <div class="card" onclick="playVideo('8PCudvbgoMs')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8PCudvbgoMs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Como transportar equipamento</div>
+                            </div>
+                            <!-- Card do vídeo 5 -->
+                            <div class="card" onclick="playVideo('6skSoQ04Igs')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6skSoQ04Igs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Entrada de equipamentos de terceiros</div>
+                            </div>
+                            <!-- Card do vídeo 6 -->
+                            <div class="card" onclick="playVideo('GBEelrltOXs')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GBEelrltOXs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Saída de equipamentos de terceiros</div>
+                            </div>
+                            <!-- Card do vídeo 7 -->
+                            <div class="card" onclick="playVideo('bdi0MF7DQzY')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bdi0MF7DQzY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Inserir anexo na requisição</div>
+                            </div>
+                            <!-- Card do vídeo 8 -->
+                            <div class="card" onclick="playVideo('pr3KpETIOow')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pr3KpETIOow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Como fechar OS em lote</div>
+                            </div>
+                            <!-- Card do vídeo 9 -->
+                            <div class="card" onclick="playVideo('CnnSQJmtiLo')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CnnSQJmtiLo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Como cadastrar equipamento</div>
+                            </div>
+                            <!-- Card do vídeo 10 -->
+                            <div class="card" onclick="playVideo('dOt5GEsL9k4')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dOt5GEsL9k4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Como cadastrar um novo modelo</div>
+                            </div>
+                            <!-- Card do vídeo 11 -->
+                            <div class="card" onclick="playVideo('_XrKbWar4Hc')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_XrKbWar4Hc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Verificar cronograma de preventivas</div>
+                            </div>
+                            <!-- Card do vídeo 12 -->
+                            <div class="card" onclick="playVideo('lb2E0zG6T3U')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lb2E0zG6T3U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Filtrar OS's de sobreaviso</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--───────────────Fluxogramas───────────────-->
+                <div class="projects" id="fluxogramas">
+                    <h3>Fluxogramas</h3>
+                    <p>Aqui estão alguns dos nossos processos:</p>
+                    <div class="work-box">
+                        <div class="work">
+                            <!-- Card do fluxograma 1 -->
+                            <div class="card" onclick="openFluxogramaModal('./static/Fluxo de Entrada e Saída de Equipamentos de terceiros.png')">
+                                <img src="./static/Fluxo de Entrada e Saída de Equipamentos de terceiros.png" alt="Fluxograma 1">
+                                <div class="work-content">Fluxo de Entrada e Saída de Equipamentos de terceiros</div>
+                            </div>
+                            <!-- Card do fluxograma 2 -->
+                            <div class="card" onclick="openModal('fluxograma2')">
+                                <img src="./static/Entrada de equipamentos para manutenção.png" alt="Fluxograma 2">
+                                <div class="work-content">Entrada de equipamentos para manutenção</div>
+                            </div>
+                            <!-- Card do fluxograma 3 -->
+                            <div class="card" onclick="openModal('fluxograma3')">
+                                <img src="./static/FLUXO DE INATIVAÇÃO DE EMH.png" alt="Fluxograma 3">
+                                <div class="work-content">FLUXO DE INATIVAÇÃO DE EMH</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--──────────────Contact────────────────-->
+                <div id="contact">
+                    <!--────social media links─────-->
+                    <h3>Contact.<hr></h3>
+                    <p>Feel free to contact me on my social media.</p>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+                        <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+                        <a href="#" target="_blank"><i class='fab fa-github'></i></a>
+                        <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+	        </main>
+        </div>
+
+        <!--──────────────Footer────────────────-->
+	    <footer class="copyright">© 2024 
+		    <a href="www.linkedin.com/in/felipeRCostaDeveloper" target="_blank"> Felipe R. Costa</a>
+        </footer>
+        <!-- Modal para exibir os fluxogramas -->
+        <div id="fluxogramaModal" class="modal">
+            <span class="close" onclick="closeModal('fluxogramaModal')">&times;</span>
+            <img class="modal-content" id="fluxogramaImg">
+        </div>
+
+    </div>
+    <!--
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+    -->
+  </body>
+</html>
