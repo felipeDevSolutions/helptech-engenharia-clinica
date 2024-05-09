@@ -4,7 +4,7 @@ index.html:
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Engenharia Clínica HelpTech</title>
+        <title>HelpTech Engenharia Clínica</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
@@ -17,18 +17,13 @@ index.html:
 	  
             <!--────────────────Header───────────────-->
             <header>
-                <a class="logo" href="#home">
-                    <img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" alt="repl logo" />
-                </a>
                 <nav>	
-                <ul class="nav-bar"><div class="bg"></div>
-                    <li><a class="nav-link active" href="#home">Home</a></li>
-                    <li><a class="nav-link" href="#projects">Vídeos</a></li>
-                    <li><a class="nav-link" href="#fluxogramas">Fluxogramas</a></li>
-                    <li><a class="nav-link" href="#contact">Contato</a></li>
-                </ul>
-                    
-                    
+                    <ul class="nav-bar"><div class="bg"></div>
+                        <li><a class="nav-link active" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#projects">Vídeos</a></li>
+                        <li><a class="nav-link" href="#fluxogramas">Fluxogramas</a></li>
+                        <li><a class="nav-link" href="#contact">Contato</a></li>
+                    </ul> 
                 </nav>
             </header>
             <main>
@@ -36,26 +31,23 @@ index.html:
                 <div id="home">
                     <div class="filter"></div>
                     <section class="intro">
-                        <h3>Engenharia Clínica HelpTech<hr></h3>
+                        <h3>HelpTech</h3>
+                        <h4>Engenharia Clínica<hr></h4>
                         <p>Aqui, você encontrará uma coleção de vídeos e fluxogramas, feitos especialmente para você, colaborador da Engenharia Clínica.</p>
-                        <p>Estes tutoriais estão aqui para ajudá-lo à aprender novos procedimentos e até relembrar os processos existentes.</p>
                         <p>Sinta-se à vontade para explorar o conhecimento que está ao seu alcance!</p>
                         
-                    <!--────social media links─────-->
-                        
-                    <div class="social-media">
-                        <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-                        <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-                        <a href="#" target="_blank"><i class='fab fa-github'></i></a>
-                        <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <!--────social media links─────-->
+                            
+                        <div class="social-media">
+                            <a href="https://github.com/felipeDevSolutions" target="_blank"><i class='fab fa-github'></i></a>
+                            <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+                            <a href="https://www.youtube.com/channel/UCblinmn6DLcGuyJa299OlOQ" target="_blank"><i class="fab fa-youtube"></i></a>
                         </div>
-                        
                     </section> 
                 </div>  
                 
                 <!--───────────────Projects───────────────-->
-                <div id="projects"> 
+                <div class="projects" id="projects"> 
                     <h3>Nossos Vídeos</h3>
                     <p>Aqui estão alguns vídeos dos nossos processos:</p>
                     <div class="work-box">
@@ -125,30 +117,30 @@ index.html:
                 </div>
                 
                 <!--───────────────Fluxogramas───────────────-->
-                <div id="fluxogramas"> 
+                <div class="projects" id="fluxogramas">
                     <h3>Fluxogramas</h3>
                     <p>Aqui estão alguns dos nossos processos:</p>
                     <div class="work-box">
                         <div class="work">
                             <!-- Card do fluxograma 1 -->
-                            <div class="card" onclick="openModal('fluxograma1')">
-                                <img src="https://www.canva.com/design/DAF5T7G5MVo/ae6UGSGeMIdwNoEslnSxHg/edit?utm_content=DAF5T7G5MVo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" alt="Fluxograma 1">
-                                <div class="work-content">Descrição do fluxograma 1</div>
+                            <div class="card" onclick="openFluxogramaModal('./static/Fluxo de Entrada e Saída de Equipamentos de terceiros.png')">
+                                <img src="./static/Fluxo de Entrada e Saída de Equipamentos de terceiros.png" alt="Fluxograma 1">
+                                <div class="work-content">Fluxo de Entrada e Saída de Equipamentos de terceiros</div>
                             </div>
                             <!-- Card do fluxograma 2 -->
-                            <div class="card" onclick="openModal('fluxograma2')">
-                                <img src="https://www.canva.com/design/DAFo5YWyg-I/UtC5YSwFvOh1kUlq3U1GQw/edit?utm_content=DAFo5YWyg-I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" alt="Fluxograma 2">
-                                <div class="work-content">Descrição do fluxograma 2</div>
+                            <div class="card" onclick="openFluxogramaModal('./static/Entrada de equipamentos para manutenção.png')">
+                                <img src="./static/Entrada de equipamentos para manutenção.png" alt="Fluxograma 2">
+                                <div class="work-content">Entrada de equipamentos para manutenção</div>
                             </div>
                             <!-- Card do fluxograma 3 -->
-                            <div class="card" onclick="openModal('fluxograma3')">
-                                <img src="https://www.canva.com/design/DAGEvyhIrQw/CWPVEiabHztJpr6-bn8XPg/edit?utm_content=DAGEvyhIrQw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" alt="Fluxograma 3">
-                                <div class="work-content">Descrição do fluxograma 3</div>
+                            <div class="card" onclick="openFluxogramaModal('./static/FLUXO DE INATIVAÇÃO DE EMH.png')">
+                                <img src="./static/FLUXO DE INATIVAÇÃO DE EMH.png" alt="Fluxograma 3">
+                                <div class="work-content">FLUXO DE INATIVAÇÃO DE EMH</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!--──────────────Contact────────────────-->
                 <div id="contact">
                     <!--────social media links─────-->
@@ -170,7 +162,12 @@ index.html:
 	    <footer class="copyright">© 2024 
 		    <a href="www.linkedin.com/in/felipeRCostaDeveloper" target="_blank"> Felipe R. Costa</a>
         </footer>
-	  
+        <!-- Modal para exibir os fluxogramas -->
+        <div id="fluxogramaModal" class="modal">
+            <span class="close" onclick="closeModal('fluxogramaModal')">&times;</span>
+            <img class="modal-content" id="fluxogramaImg">
+        </div>
+
     </div>
     <!--
     This script places a badge on your repl's full-browser view back to your repl's cover
@@ -193,7 +190,6 @@ index.html:
 
 
 
-script.js:
 // header scrolling effect
 $(window).on('scroll', function(){
 	if($(window).scrollTop()){
@@ -231,6 +227,23 @@ const navSlide = () => {
 	}
 
 window.onload = () => navSlide();
+
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+}
+
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
+function openFluxogramaModal(imgSrc) {
+    var modal = document.getElementById('fluxogramaModal');
+    var modalImg = document.getElementById('fluxogramaImg');
+    modalImg.src = imgSrc;
+    modal.style.display = "block";
+}
 
 
 
@@ -299,18 +312,12 @@ header:hover{
 	background: var(--main-header-background);
 }
 
-body{
-    width: 100%;
-}
+
 
 .container{
     display: flex;
 }
-.logo img{
-	padding-top: 5px;
-	height: 50px;
-	cursor: pointer;
-}
+
 
 .nav-bar{
 	list-style:none;
@@ -320,7 +327,7 @@ body{
 
 a.nav-link{
 	margin: 2px;
-	padding: 5px 10px;
+	padding: 5px 8px;
 	text-decoration: none;
 	color: var(--main-fonts-color);
 	font-family: var(--main-font-family);
@@ -342,13 +349,13 @@ a.nav-link{
 ──────────────────*/
 
 #home{ 	
+    width: 100%;
 	margin: auto;
 	height: 100vh;
 	color: var(--main-fonts-color);
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 #home .filter{
@@ -378,12 +385,22 @@ a.nav-link{
 	text-align:center;
 }
 
- h3{
+h3{
 	padding-bottom: 15px;
     letter-spacing: normal;
     font-family: var(--main-font-family);
 	font-style: normal;
 	font-size: 60px;
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+}
+
+h4{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 40px;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
@@ -422,7 +439,7 @@ a.nav-link{
       projects
 ──────────────────*/
 
-#projects{
+.projects{
 	margin-top:auto;
     width: 100%;
     height: 100%;
@@ -433,10 +450,10 @@ a.nav-link{
 	text-align:center;
 	color: var(--main-fonts-color);
 }
-#projects h3{
+.projects h3{
     padding-top: 70px;
 }
-#projects p{
+.projects p{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
@@ -493,26 +510,61 @@ a.nav-link{
 	box-shadow: 0 0 1.5rem var(--main-decor-color);
 }
 
-#fluxogramas{
-	margin-top:auto;
+/*──────────────────
+    Modal Fluxograma
+──────────────────*/
+/* Estilos para a modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 20px;
     width: 100%;
     height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-	text-align:center;
-	color: var(--main-fonts-color);
-}
-#fluxogramas h3{
-    padding-top: 70px;
-}
-#fluxogramas p{
-	font-family: var(--main-font-family);
-	font-size:1.2rem;
-	padding: 10px;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
 }
 
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.close {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%; /* Garante que a imagem preencha a largura do card */
+    max-height: 80%; /* Altura máxima para as imagens (80% da altura do card) */
+    border-radius: 12px 12px 0 0; /* Adiciona borda arredondada apenas no topo */
+}
+
+.card .work-content {
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 1rem;
+    color: var(--main-fonts-color);
+    font-family: var(--main-font-family);
+    cursor: pointer;
+}
 /*──────────────────
       Contact
 ──────────────────*/
@@ -629,4 +681,54 @@ hr {
 		opacity: 1;
 		transform:translatex(0px);
 	}
+}
+
+@media (max-width:835px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar{
+        list-style:none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    h3{
+        padding-bottom: 15px;
+        letter-spacing: normal;
+        font-family: var(--main-font-family);
+        font-style: normal;
+        font-size: 40px;
+        color: var(--main-fonts-color);
+        text-shadow: 0px 0px 40px var(--main-decor-color);
+        white-space: nowrap;
+    }
+    
+    h4{
+        padding-bottom: 15px;
+        letter-spacing: normal;
+        font-family: var(--main-font-family);
+        font-style: normal;
+        font-size: 30px;
+        color: var(--main-fonts-color);
+        text-shadow: 0px 0px 40px var(--main-decor-color);
+        white-space: nowrap;
+    }
 }

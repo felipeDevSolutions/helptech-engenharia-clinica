@@ -219,9 +219,10 @@ h4{
     display: flex;
     flex-direction: column;
     margin: 15px;
-    height: auto;
+    height: 250px; /* Adjust the height as needed to match the video cards */
     border-radius: 12px;
     background: var(--main-decor-color);
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
 
@@ -289,19 +290,15 @@ h4{
 }
 
 .card img {
-    width: 100%; /* Garante que a imagem preencha a largura do card */
-    max-height: 80%; /* Altura máxima para as imagens (80% da altura do card) */
-    border-radius: 12px 12px 0 0; /* Adiciona borda arredondada apenas no topo */
+    display: flex;
+    flex-direction: column;
+    height: 250px; /* Adjust the height as needed to match the video cards */
+    border-radius: 12px;
+    background: var(--main-decor-color);
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
-.card .work-content {
-    text-align: center;
-    padding: 10px 5px;
-    font-size: 1rem;
-    color: var(--main-fonts-color);
-    font-family: var(--main-font-family);
-    cursor: pointer;
-}
+
 /*──────────────────
       Contact
 ──────────────────*/
