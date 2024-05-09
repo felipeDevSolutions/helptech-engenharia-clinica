@@ -49,18 +49,12 @@ header:hover{
 	background: var(--main-header-background);
 }
 
-body{
-    width: 100%;
-}
+
 
 .container{
     display: flex;
 }
-.logo img{
-	padding-top: 5px;
-	height: 50px;
-	cursor: pointer;
-}
+
 
 .nav-bar{
 	list-style:none;
@@ -70,7 +64,7 @@ body{
 
 a.nav-link{
 	margin: 2px;
-	padding: 5px 10px;
+	padding: 5px 8px;
 	text-decoration: none;
 	color: var(--main-fonts-color);
 	font-family: var(--main-font-family);
@@ -92,13 +86,13 @@ a.nav-link{
 ──────────────────*/
 
 #home{ 	
+    width: 100%;
 	margin: auto;
 	height: 100vh;
 	color: var(--main-fonts-color);
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 #home .filter{
@@ -128,12 +122,22 @@ a.nav-link{
 	text-align:center;
 }
 
- h3{
+h3{
 	padding-bottom: 15px;
     letter-spacing: normal;
     font-family: var(--main-font-family);
 	font-style: normal;
 	font-size: 60px;
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+}
+
+h4{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 40px;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
@@ -242,8 +246,6 @@ a.nav-link{
 .card:hover{
 	box-shadow: 0 0 1.5rem var(--main-decor-color);
 }
-
-
 
 /*──────────────────
     Modal Fluxograma
@@ -416,4 +418,54 @@ hr {
 		opacity: 1;
 		transform:translatex(0px);
 	}
+}
+
+@media (max-width:835px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar{
+        list-style:none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    h3{
+        padding-bottom: 15px;
+        letter-spacing: normal;
+        font-family: var(--main-font-family);
+        font-style: normal;
+        font-size: 40px;
+        color: var(--main-fonts-color);
+        text-shadow: 0px 0px 40px var(--main-decor-color);
+        white-space: nowrap;
+    }
+    
+    h4{
+        padding-bottom: 15px;
+        letter-spacing: normal;
+        font-family: var(--main-font-family);
+        font-style: normal;
+        font-size: 30px;
+        color: var(--main-fonts-color);
+        text-shadow: 0px 0px 40px var(--main-decor-color);
+        white-space: nowrap;
+    }
 }
