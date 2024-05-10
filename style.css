@@ -220,6 +220,7 @@ h4{
     flex-direction: column;
     margin: 15px;
     height: 250px; /* Adjust the height as needed to match the video cards */
+    width: 30%;
     border-radius: 12px;
     background: var(--main-decor-color);
     overflow: hidden; /* Ensure content does not overflow */
@@ -496,6 +497,17 @@ hr {
         color: var(--main-fonts-color);
         text-shadow: 0px 0px 40px var(--main-decor-color);
         white-space: nowrap;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        height: 250px; /* Adjust the height as needed to match the video cards */
+        width: 90%;
+        border-radius: 12px;
+        background: var(--main-decor-color);
+        overflow: hidden; /* Ensure content does not overflow */
     }
 
     /*──────────────────
