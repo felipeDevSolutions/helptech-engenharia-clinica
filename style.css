@@ -251,6 +251,19 @@ h4{
 /*──────────────────
     Modal Fluxograma
 ──────────────────*/
+
+/* Animação de zoom para a modal */
+@keyframes modalZoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /* Estilos para a modal */
 .modal {
     display: none;
@@ -262,6 +275,7 @@ h4{
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 2, 15, 0.807); 
+    animation: modalZoomIn 0.5s ease; /* Adicionando a animação de zoom */
 }
 
 .modal-content {
@@ -302,7 +316,8 @@ h4{
 .card img {
     display: flex;
     flex-direction: column;
-    height: 250px; /* Adjust the height as needed to match the video cards */
+    flex-wrap: wrap;
+    height: 200px; /* Adjust the height as needed to match the video cards */
     border-radius: 12px;
     background: var(--main-decor-color);
     overflow: hidden; /* Ensure content does not overflow */
@@ -497,6 +512,7 @@ hr {
         height: 100%;
         overflow: auto;
         background-color: rgba(0, 2, 15, 0.807); 
+        animation: modalZoomIn 0.2s ease; /* Adicionando a animação de zoom */
     }
 
     .modal-content {

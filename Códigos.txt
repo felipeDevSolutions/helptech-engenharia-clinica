@@ -40,7 +40,7 @@ index.html:
                             
                         <div class="social-media">
                             <a href="https://github.com/felipeDevSolutions" target="_blank"><i class='fab fa-github'></i></a>
-                            <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+                            <a href="https://www.linkedin.com/in/felipercostadeveloper/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
                             <a href="https://www.youtube.com/channel/UCblinmn6DLcGuyJa299OlOQ" target="_blank"><i class="fab fa-youtube"></i></a>
                         </div>
                     </section> 
@@ -112,6 +112,11 @@ index.html:
                                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lb2E0zG6T3U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <div class="work-content">Filtrar OS's de sobreaviso</div>
                             </div>
+                            <!-- Card do vídeo 13 -->
+                            <div class="card" onclick="playVideo('lbZACMvo3SE')">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lbZACMvo3SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="work-content">Uso da Centrífuga HOFFMANNLAB</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,14 +149,12 @@ index.html:
                 <!--──────────────Contact────────────────-->
                 <div id="contact">
                     <!--────social media links─────-->
-                    <h3>Contact.<hr></h3>
-                    <p>Feel free to contact me on my social media.</p>
+                    <h3>Contato:<hr></h3>
+                    <p>Sinta-se à vontade para entrar em contato comigo nas minhas redes sociais.</p>
                     <div class="social-media">
-                        <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-                        <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-                        <a href="#" target="_blank"><i class='fab fa-github'></i></a>
-                        <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/felipeDevSolutions" target="_blank"><i class='fab fa-github'></i></a>
+                        <a href="https://www.linkedin.com/in/felipercostadeveloper/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+                        <a href="https://www.youtube.com/channel/UCblinmn6DLcGuyJa299OlOQ" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
@@ -390,7 +393,7 @@ h3{
     letter-spacing: normal;
     font-family: var(--main-font-family);
 	font-style: normal;
-	font-size: 60px;
+	font-size: 70px;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
@@ -482,9 +485,10 @@ h4{
     display: flex;
     flex-direction: column;
     margin: 15px;
-    height: auto;
+    height: 250px; /* Adjust the height as needed to match the video cards */
     border-radius: 12px;
     background: var(--main-decor-color);
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
 
@@ -515,15 +519,15 @@ h4{
 ──────────────────*/
 /* Estilos para a modal */
 .modal {
-    display: none; 
+    display: none;
     position: fixed; 
     z-index: 1; 
     left: 0;
-    top: 20px;
+    top: 0px;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0, 2, 15, 0.807); 
 }
 
 .modal-content {
@@ -531,17 +535,27 @@ h4{
     display: block;
     max-width: 95%;
     max-height: 95%;
+    margin: 2vh auto;
+    
 }
 
 .close {
     position: absolute;
-    top: 70px;
-    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    top: 20vh;
+    right: 25px;
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     transition: 0.3s;
     z-index: 2;
+    background-color: #00a9e2;
+    border-radius: 50%;
+    padding: 20px;
 }
 
 .close:hover,
@@ -552,19 +566,15 @@ h4{
 }
 
 .card img {
-    width: 100%; /* Garante que a imagem preencha a largura do card */
-    max-height: 80%; /* Altura máxima para as imagens (80% da altura do card) */
-    border-radius: 12px 12px 0 0; /* Adiciona borda arredondada apenas no topo */
+    display: flex;
+    flex-direction: column;
+    height: 250px; /* Adjust the height as needed to match the video cards */
+    border-radius: 12px;
+    background: var(--main-decor-color);
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
-.card .work-content {
-    text-align: center;
-    padding: 10px 5px;
-    font-size: 1rem;
-    color: var(--main-fonts-color);
-    font-family: var(--main-font-family);
-    cursor: pointer;
-}
+
 /*──────────────────
       Contact
 ──────────────────*/
@@ -710,12 +720,19 @@ hr {
         width: 100%;
     }
 
+    .intro  p{
+        margin: 5px;
+        font-size:1rem;
+        font-family: var(--main-font-family);
+        text-align:center;
+    }
+
     h3{
         padding-bottom: 15px;
         letter-spacing: normal;
         font-family: var(--main-font-family);
         font-style: normal;
-        font-size: 40px;
+        font-size: 45px;
         color: var(--main-fonts-color);
         text-shadow: 0px 0px 40px var(--main-decor-color);
         white-space: nowrap;
@@ -726,9 +743,59 @@ hr {
         letter-spacing: normal;
         font-family: var(--main-font-family);
         font-style: normal;
-        font-size: 30px;
+        font-size: 35px;
         color: var(--main-fonts-color);
         text-shadow: 0px 0px 40px var(--main-decor-color);
         white-space: nowrap;
+    }
+
+    /*──────────────────
+    Modal Fluxograma
+    ──────────────────*/
+    /* Estilos para a modal */
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 2, 15, 0.807); 
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 95%;
+        max-height: 95%;
+        margin: 30vh auto;
+    }
+
+    .close {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        top: 20vh;
+        right: 25px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+        z-index: 2;
+        background-color: #00a9e2;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
     }
 }
