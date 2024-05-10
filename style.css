@@ -178,6 +178,7 @@ h4{
 
 .projects{
 	margin-top:auto;
+    padding: 0;
     width: 100%;
     height: 100%;
 	display: flex;
@@ -199,6 +200,9 @@ h4{
 
 
 .work-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%; /* Utiliza toda a largura disponível */
     max-width: 1200px; /* Define a largura máxima */
     margin: 0 /* Centraliza horizontalmente */
@@ -221,6 +225,7 @@ h4{
     margin: 15px;
     height: 250px; /* Adjust the height as needed to match the video cards */
     width: 30%;
+    max-width: 100%;
     border-radius: 12px;
     background: var(--main-decor-color);
     overflow: hidden; /* Ensure content does not overflow */
