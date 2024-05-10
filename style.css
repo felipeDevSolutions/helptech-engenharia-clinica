@@ -127,7 +127,7 @@ h3{
     letter-spacing: normal;
     font-family: var(--main-font-family);
 	font-style: normal;
-	font-size: 60px;
+	font-size: 70px;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
@@ -444,12 +444,19 @@ hr {
         width: 100%;
     }
 
+    .intro  p{
+        margin: 5px;
+        font-size:1rem;
+        font-family: var(--main-font-family);
+        text-align:center;
+    }
+
     h3{
         padding-bottom: 15px;
         letter-spacing: normal;
         font-family: var(--main-font-family);
         font-style: normal;
-        font-size: 40px;
+        font-size: 45px;
         color: var(--main-fonts-color);
         text-shadow: 0px 0px 40px var(--main-decor-color);
         white-space: nowrap;
@@ -460,9 +467,58 @@ hr {
         letter-spacing: normal;
         font-family: var(--main-font-family);
         font-style: normal;
-        font-size: 30px;
+        font-size: 35px;
         color: var(--main-fonts-color);
         text-shadow: 0px 0px 40px var(--main-decor-color);
         white-space: nowrap;
     }
+
+    /*──────────────────
+    Modal Fluxograma
+──────────────────*/
+/* Estilos para a modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 2, 15, 0.807); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+    margin: 30vh auto;
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    top: 20vh;
+    right: 25px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 2;
+    background-color: #00a9e2;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 }
