@@ -253,15 +253,15 @@ h4{
 ──────────────────*/
 /* Estilos para a modal */
 .modal {
-    display: none; 
+    display: none;
     position: fixed; 
     z-index: 1; 
     left: 0;
-    top: 20px;
+    top: 0px;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0, 2, 15, 0.807); 
 }
 
 .modal-content {
@@ -269,17 +269,27 @@ h4{
     display: block;
     max-width: 95%;
     max-height: 95%;
+    margin: 2vh auto;
+    
 }
 
 .close {
     position: absolute;
-    top: 70px;
-    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    top: 20vh;
+    right: 25px;
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     transition: 0.3s;
     z-index: 2;
+    background-color: #00a9e2;
+    border-radius: 50%;
+    padding: 20px;
 }
 
 .close:hover,
@@ -475,50 +485,51 @@ hr {
 
     /*──────────────────
     Modal Fluxograma
-──────────────────*/
-/* Estilos para a modal */
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 2, 15, 0.807); 
-}
+    ──────────────────*/
+    /* Estilos para a modal */
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 2, 15, 0.807); 
+    }
 
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 95%;
-    max-height: 95%;
-    margin: 30vh auto;
-}
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 95%;
+        max-height: 95%;
+        margin: 30vh auto;
+    }
 
-.close {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10px;
-    height: 10px;
-    top: 20vh;
-    right: 25px;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    transition: 0.3s;
-    z-index: 2;
-    background-color: #00a9e2;
-    border-radius: 50%;
-    padding: 20px;
-}
+    .close {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        top: 20vh;
+        right: 25px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+        z-index: 2;
+        background-color: #00a9e2;
+        border-radius: 50%;
+        padding: 20px;
+    }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
