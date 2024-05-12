@@ -223,7 +223,7 @@ h4{
     display: flex;
     flex-direction: column;
     margin: 15px;
-    height: 250px; /* Adjust the height as needed to match the video cards */
+    height: 250px;
     width: 30%;
     max-width: 100%;
     border-radius: 12px;
@@ -281,7 +281,7 @@ h4{
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 2, 15, 0.807); 
-    animation: modalZoomIn 0.5s ease; /* Adicionando a animação de zoom */
+    
 }
 
 .modal-content {
@@ -290,7 +290,7 @@ h4{
     max-width: 95%;
     max-height: 95%;
     margin: 2vh auto;
-    
+    animation: modalZoomIn 0.4s ease; /* Adicionando a animação de zoom */
 }
 
 .close {
@@ -301,7 +301,7 @@ h4{
     width: 10px;
     height: 10px;
     top: 20vh;
-    right: 25px;
+    right: 0px;
     color: #fff;
     font-size: 30px;
     font-weight: bold;
@@ -323,7 +323,7 @@ h4{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 200px; /* Adjust the height as needed to match the video cards */
+    height: 30vh; /* Adjust the height as needed to match the video cards */
     border-radius: 12px;
     background: var(--main-decor-color);
     overflow: hidden; /* Ensure content does not overflow */
@@ -448,32 +448,11 @@ hr {
 	}
 }
 
-@media (max-width:835px){
+/*──────────────────
+    Iphone Vertical
+──────────────────*/
 
-    main{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    nav{
-        display: flex;
-        justify-content: center;
-    }
-    .nav-bar{
-        list-style:none;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .intro{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+@media (max-width:414px){
 
     .intro  p{
         margin: 5px;
@@ -508,12 +487,14 @@ hr {
         display: flex;
         flex-direction: column;
         margin: 15px;
-        height: 250px; /* Adjust the height as needed to match the video cards */
-        width: 90%;
+        height: 30vh; /* Alteração aqui */
+        width: 100%;
         border-radius: 12px;
         background: var(--main-decor-color);
         overflow: hidden; /* Ensure content does not overflow */
     }
+
+    
 
     /*──────────────────
     Modal Fluxograma
@@ -535,20 +516,20 @@ hr {
     .modal-content {
         margin: auto;
         display: block;
-        max-width: 95%;
+        max-width: 100%;
         max-height: 95%;
         margin: 30vh auto;
     }
 
+
+
     .close {
-        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 10px;
         height: 10px;
         top: 20vh;
-        right: 25px;
         color: #fff;
         font-size: 30px;
         font-weight: bold;
@@ -564,5 +545,38 @@ hr {
         color: #bbb;
         text-decoration: none;
         cursor: pointer;
+    }
+}
+
+
+@media (min-width: 415px) and (max-width:834px){
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        height: 40vh; /* Alteração aqui */
+        max-height: 100%; /* Adição aqui */
+        width: 100%;
+        border-radius: 12px;
+        background: var(--main-decor-color);
+        overflow: hidden; /* Ensure content does not overflow */
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 30vh auto;
+    }
+
+    .card img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 40vh; /* Adjust the height as needed to match the video cards */
+        border-radius: 12px;
+        background: var(--main-decor-color);
+        overflow: hidden; /* Ensure content does not overflow */
     }
 }
