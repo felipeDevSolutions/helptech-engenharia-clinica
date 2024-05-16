@@ -3,8 +3,8 @@
 :root{
 	--main-background: #0b0c0f;
 	--main-fonts-color: #fff;
-	--main-decor-color:#00a9e2;
-    --main-header-background:#21252e;
+	--main-decor-color:#00fbbcb2;
+    --main-header-background:#111614;
 	--main-font-family: 'Poppins', sans-serif;
 }
 
@@ -307,7 +307,7 @@ h4{
     font-weight: bold;
     transition: 0.3s;
     z-index: 2;
-    background-color: #00a9e2;
+    background-color: var(--main-decor-color);
     border-radius: 50%;
     padding: 20px;
 }
@@ -535,7 +535,7 @@ hr {
         font-weight: bold;
         transition: 0.3s;
         z-index: 2;
-        background-color: #00a9e2;
+        background-color: var(--main-decor-color);
         border-radius: 50%;
         padding: 20px;
     }
